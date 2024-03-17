@@ -1,10 +1,10 @@
-title: devlopr
-subtitle: A Portfolio Jekyll Theme Built for Developers
+title: The Code Guardian
+subtitle: A blog for 0x0M03II - Maurice Green
 description: >- # this means to ignore newlines until "baseurl:"
-  devlopr-jekyll is a beautiful Jekyll Theme Built For Developers, which is optimized for speed and readability.
+  This is a Security and Tech blog.
 
-url: "" # the base hostname & protocol for your site, e.g. https://example.github.io
-baseurl: "" # the subpath of your site, e.g. /blog
+url: "thecodeguardian.dev" # the base hostname & protocol for your site, e.g. https://example.github.io
+baseurl: "/" # the subpath of your site, e.g. /blog
 
 # Navigation
 urls:
@@ -14,10 +14,10 @@ urls:
       url: /about
     - text: Blog
       url: /blog
-    - text: Gallery
-      url: /gallery
-    - text: Shop
-      url : /shop
+    - text: Links
+      url: /links
+    - text: Connect
+      url : /connect
     - text: Contact
       url : /contact
 
@@ -25,77 +25,74 @@ urls:
 # Edit Author details (For multi authors check _data/authors.yml)
 
 author_logo: profile.png
-author: John Doe
-author_bio: Hi, my name is John Doe. I built this site using devlopr-jekyll :D
-author_email: "mail@sujaykundu.com"
-author_location: India
-author_website_url: "https://sujaykundu.com"
-typewrite-text: devlopr is a jekyll framework built for developers. You can edit this in _config.yml file
+author: Maurice Green
+author_bio: Hello, My name is Maurice Green!  I am a security and CS enthusiest and follower of Jesus!
+author_email: "maurice.green@thecodeguardian.dev"
+author_location: United States of America
+author_website_url: "https://thecodeguardian.dev"
+typewrite-text: This blog is for those who love all things CS to learn and collaborate.
 hero_cover_img: sample_cover.jpg # replace this for changing homepage cover (eg. try cover.jpeg). Image should be in /assets/img
 
 # Experiences
 author_work_experiences:
-            - company_name: Google
+            - company_name: Industry Dive
               company_logo: google.png
-              company_url: https://google.com
-              designation: Software Engineer
-              description: Worked on various Google Products
+              company_url: https://www.industrydive.com/
+              designation: DevOps Engineer
+              description: Kubernetes, GCP, Security
               visibility: true
-            - company_name: Microsoft
+            - company_name: Peak6 Capital Management
               company_logo: microsoft.png
-              company_url: https://microsoft.com
+              company_url: https://peak6.com/
               designation: Azure Developer
-              description: Worked on various Azure Cloud Products
+              description: Kubernetes, GCP, Security
               visibility: true
 
 # Education
 author_education_details:
-              - college_logo: mit.png
-                college_name: MIT
-                college_url: https://mit.org
-                college_degree: CS Engineer
-                description: Bachelor of Technology
+              - college_logo: utk.png
+                college_name: University of Tennessee (Knoxville)
+                college_url: https://utk.edu
+                college_degree: Computer Science
+                description: Master of Science
+                visibility: true
+              - college_logo: eiu.png
+                college_name: Eastern Illinois University
+                college_url: https://eiu.edu
+                college_degree: Management Information Systems
+                description: Bachelor of Science
                 visibility: true
 
 # Projects
 author_project_details:
-              - project_thumbnail: gamershub.png
-                project_title: Gamers Hub
-                project_description: A Platform built for Gamers and Game Devs
-                project_url: https://gamershub.in
-                visibility: true
-              - project_thumbnail: hack4r.PNG
-                project_title: Hack4r
-                project_description: A Platform built for Hackers and Penetration Testers
-                project_url: https://hack4r.com
+              - project_thumbnail: crystal.png
+                project_title: CrystalGPU
+                project_description: A GUI for analyzing binaries on GPUs
+                project_url: https://www.hackthebox.com/
                 visibility: true
 
 # social links
-twitter_username: johndoe
-github_username:  sujaykundu777
-facebook_username: johndoe
-linkedin_username: johndoe
-behance_username: johndoe
-instagram_username: johndoe
-medium_username: johndoe
-telegram_username: johndoe
-dribbble_username: johndoe
-flickr_username: johndoe
+twitter_username: 0x0M03II
+github_username:  0x0M03II
+linkedin_username: 0x0m03ii
+discuss_systems: 0x0M03II
+
+
 
 #for comments ( we got Disqus and Hyvor Commenting, uncomment the one you want to use )
 
-# disqus_shortname: sujay-kundu
-hyvor_talk_website_id: 476
+disqus_shortname: thecodeguardian-dev.disqus.com
+#hyvor_talk_website_id: 476
 
 # wakatime username (coding activity)
-wakatime_username: sujaykundu777
+wakatime_username: 0x0M03II
 
 # mailchimp embedded form url (newsletter):
-mailchimp_form_url: https://sujaykundu.us10.list-manage.com/subscribe/post?u=50bab1c85eae24ecfb0f68361&amp;id=3a2dd721d0
+#mailchimp_form_url: https://sujaykundu.us10.list-manage.com/subscribe/post?u=50bab1c85eae24ecfb0f68361&amp;id=3a2dd721d0
 
 # contact form - (choose formspress or getform)
 # getform_endpoint: 83b703c3-9e47-4df4-ac55-e24d7eb02abc
-formspree_email: johndoe@gmail.com
+formspree_email: maurice.green@thecodeguardian.dev
 
 # releases - widget can be (sidebar, modal or embed)
 olvy_organization: devlopr
