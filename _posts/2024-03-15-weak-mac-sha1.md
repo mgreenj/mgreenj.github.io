@@ -4,10 +4,10 @@ title:  "Weak Message Authentication Implementation of SHA1"
 summary: "Learn how to perform a message/length extension attack"
 author: 0x0m03ii
 date: '2024-03-15 10:35:23 +0530'
-category: ['jekyll','guides', 'sample_category']
-tags: jekyll
+category: ['encryption', 'guides']
+tags: encryption
 thumbnail: /assets/img/posts/sha1.jpg
-keywords: devlopr jekyll, how to use devlopr, devlopr, how to use devlopr-jekyll, devlopr-jekyll tutorial,best jekyll themes, multi categories and tags
+keywords: encryption, hacking, security, mac, weak encryption, weak, sha1, sha, hashing
 usemathjax: false
 permalink: /blog/length-extension-attack/
 ---
