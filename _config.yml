@@ -36,13 +36,13 @@ hero_cover_img: sample_cover.jpg # replace this for changing homepage cover (eg.
 # Experiences
 author_work_experiences:
             - company_name: Industry Dive
-              company_logo: google.png
+              company_logo: id.png
               company_url: https://www.industrydive.com/
               designation: DevOps Engineer
               description: Kubernetes, GCP, Security
               visibility: true
             - company_name: Peak6 Capital Management
-              company_logo: microsoft.png
+              company_logo: p6.png
               company_url: https://peak6.com/
               designation: Azure Developer
               description: Kubernetes, GCP, Security
