@@ -26,10 +26,12 @@ urls:
 
 author_logo: profile.png
 author: Maurice Green
-author_bio: Hello, My name is Maurice Green!  I am a security and CS enthusiest and follower of Jesus!
+author_bio: >
+  Hello, My name is Maurice Green! I am a security and CS enthusiast and follower of Jesus!
   Check out my other Blogs
-    - <a href=\"https://www.excellencyofchrist.blog\">Excellency Of Christ</a>."
-    - <a href=\"https://www.romans1520.blog\">Romans 15:20</a>."
+    - <a href="https://www.excellencyofchrist.blog">Excellency Of Christ</a>,
+    - <a href="https://www.romans1520.blog">Romans 15:20</a>.
+
 author_email: "maurice.green@thecodeguardian.dev"
 author_location: United States of America
 author_website_url: "https://thecodeguardian.dev"
