@@ -44,7 +44,7 @@ author_work_experiences:
             - company_name: Peak6 Capital Management
               company_logo: p6.png
               company_url: https://peak6.com/
-              designation: Azure Developer
+              designation: DevOps Engineer
               description: Kubernetes, GCP, Security
               visibility: true
 
