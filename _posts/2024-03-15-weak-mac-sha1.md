@@ -6,7 +6,7 @@ author: 0x0M03II
 date: '2024-03-15 10:35:23 +0530'
 category: ['encryption', 'guides']
 tags: encryption
-thumbnail: /assets/img/posts/sha1.jpg
+thumbnail: /assets/img/posts/sha1.png
 keywords: encryption, hacking, security, mac, weak encryption, weak, sha1, sha, hashing
 usemathjax: false
 permalink: /blog/length-extension-attack/
