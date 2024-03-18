@@ -102,7 +102,7 @@ author_education_details:
 
 # Projects
 author_project_details:
-              - project_thumbnail: crystal.png
+              - project_thumbnail: crystal_gpu_main.png
                 project_title: CrystalGPU
                 project_description: A GUI for analyzing binaries on GPUs
                 project_url: https://github.com/0x0M03II/Crystal-GPU/
