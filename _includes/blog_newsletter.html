@@ -1,32 +1,17 @@
-<style>
-    /* Adjust the height of the terminal container */
-    #terminal-container {
-        height: 300px; /* Set your desired height here */
-        /* You can use any unit like pixels(px), percentage(%), viewport height(vh), etc. */
-        overflow: auto; /* Add overflow to enable scrolling if content exceeds height */
-    }
-</style>
-
 <!-- Mailchimp Newletters -->
-<form action="{{site.mailchimp_form_url}}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <div id="mc_embed_signup_scroll_footer">
-        <div id="terminal-container"> <!-- Add an ID to the terminal container -->
-            <!-- jQuery Terminal will be rendered here -->
-        </div>
-        <script src="https://cdn.jsdelivr.net/npm/jquery"></script>
-        <script src="https://cdn.jsdelivr.net/npm/jquery.terminal/js/jquery.terminal.min.js"></script>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery.terminal/css/jquery.terminal.min.css"/>
-        <script>
-            $(document).ready(function() {
-                // Initialize the terminal inside the document ready function
-                $('#terminal-container').terminal({
-                    hello: function(what) {
-                        this.echo('Hello, ' + what + '. Welcome to this terminal.');
-                    }
-                }, {
-                    greetings: 'My First Web Terminal'
-                });
-            });
-        </script>
-    </div>
-</form>
+<form action="{{site.mailchimp_form_url}}"method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+<div id="mc_embed_signup_scroll_footer">
+    <script src="https://cdn.jsdelivr.net/npm/jquery"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.terminal/js/jquery.terminal.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery.terminal/css/jquery.terminal.min.css"/>
+    <script>
+        $('body').terminal({
+            hello: function(what) {
+                this.echo('Hello, ' + what +
+                          '. Wellcome to this terminal.');
+            }
+        }, {
+            greetings: 'My First Web Terminal'
+        });
+    </script>
+</div>
