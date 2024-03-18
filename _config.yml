@@ -47,11 +47,17 @@ author_work_experiences:
               designation: DevOps Engineer
               description: Kubernetes, GCP, Security
               visibility: true
-            - company_name: Peak6 Capital Management
-              company_logo: p6.png
-              company_url: https://peak6.com/
-              designation: DevOps Engineer
-              description: Kubernetes, GCP, Security
+            - company_name: Differential Consulting, LLC
+              company_logo: differential.png
+              company_url: https://differentialops.com/
+              designation: Founder & Consultant
+              description: GCP, Azure, DevOps, Security, Tool Development
+              visibility: true
+            - company_name: Edward Jones
+              company_logo: edwardjones.png
+              company_url: https://edwardjones.com/
+              designation: Site Reliability Engineer
+              description: AKS, Dynatrace, eBPF C Tool Development
               visibility: true
             - company_name: Peak6 Capital Management
               company_logo: p6.png
@@ -59,6 +65,25 @@ author_work_experiences:
               designation: DevOps Engineer
               description: Kubernetes, GCP, Security
               visibility: true
+            - company_name: Apex FinTech Solutions
+              company_logo: apex.png
+              company_url: https://apexfintechsolutions.com/
+              designation: Systems Engineer
+              description: Kubernetes, GCP, Web API Development
+              visibility: true
+            - company_name: Systemware, Inc.
+              company_logo: systemware.png
+              company_url: https://systemware.com/
+              designation: DevOps Engineer
+              description: Kubernetes, GCP, Security
+              visibility: true
+            - company_name: Secureworks (A Dell Company)
+              company_logo: secureworks.png
+              company_url: https://secureworks.com/
+              designation: Sr. Security Analyst
+              description: Intrusion Analysis, Blue Team
+              visibility: true
+
 
 # Education
 author_education_details:
