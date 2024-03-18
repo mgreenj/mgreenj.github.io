@@ -2,7 +2,7 @@
 layout: post
 title:  "Weak Message Authentication Implementation of SHA1"
 summary: "Learn how to perform a message/length extension attack"
-author: 0x0m03ii
+author: 0x0M03II
 date: '2024-03-15 10:35:23 +0530'
 category: ['encryption', 'guides']
 tags: encryption
