@@ -184,7 +184,7 @@ defaults:
       type: authors
     values:
       layout: author
-      permalink: /blog/authors/:slug
+      permalink: /blog/authors/0x0m03ii
   -
     scope:
       path: 'assets/**'
