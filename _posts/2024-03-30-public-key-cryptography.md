@@ -51,7 +51,7 @@ GCD(a, b) can easily be coded using the euclidian algorithm as show below.  Note
 
 ```python
 def gcd(a, b):
-    if (b == 0):
+    if (b == 0 && a != 0):
         return a
     return gcd(b, a % b)
 ```
@@ -71,7 +71,7 @@ def gcd(a, b):
         - Currently, there aren't any known algorithms that can compute this in polynomial time.
 
 ##### Multiplicative Group
-- To keep this post brief, I will provide minimal explanation of Group Mathematics.  For further understanding, read more about Group Mathematics.  If you have time, check out [Galois Groups](https://en.wikipedia.org/wiki/Galois_group) and [Galois Fields](https://en.wikipedia.org/wiki/Finite_field) as well.  Understanding Galois finite field mathematics isn't necessary for understanding Diffie-Hellman in particular, but it is important for understanding other types of cryptography, such as AES (Advanced Encryption Standard).  It is, however, crucial that you understand Group Mathematics, because it plays an important role in Diffie-Hellman.
+- To keep this post brief, I will provide minimal explanation of Group Mathematics.  For further understanding, read more about [Group Mathematics](https://en.wikipedia.org/wiki/Group_(mathematics)).  If you have time, check out [Galois Groups](https://en.wikipedia.org/wiki/Galois_group) and [Galois Fields](https://en.wikipedia.org/wiki/Finite_field) as well.  Understanding Galois finite field mathematics isn't necessary for understanding Diffie-Hellman in particular, but it is important for understanding other types of cryptography, such as AES (Advanced Encryption Standard).  It is, however, crucial that you understand Group Mathematics, because it plays an important role in Diffie-Hellman.
 
 - Groups are sets with operations such that it can be said that the group is:
     - Closed
