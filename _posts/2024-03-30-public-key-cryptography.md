@@ -22,10 +22,10 @@ Digital signatures provide integrity and non-repudiation.  Integrity refers to t
 
 ### Math Background  
 
-I will briefly introduce a few mathematical properties necessary for understanding Diffie-Hellman and RSA.  This is by no means comprehensive, and you are encouraged to do additional reading on your own.
+I will briefly introduce a few mathematical properties necessary for understanding Diffie-Hellman and RSA.  This is by no means comprehensive, and you are encouraged to do additional reading on your own.  You may be tempted to skip the math section; although it may not be the most exiting for some, it is necessary to understand Diffie-Hellman and RSA. `Dont' Skip` 
 
 #### Division and Remainder
-- &forall; a,b &isin; &Zopf; , &exist; q, r &isin; Z such that a = b * q + r :
+- &forall; a, b &isin; Z (set of intergers) , &exist; q, r &isin; Z such that a = b * q + r :
 
     - a is the dividend
     - b is the divisor
@@ -36,35 +36,95 @@ I will briefly introduce a few mathematical properties necessary for understandi
 - a &equiv; r (mod b)
 
 
+##### Greatest Common Divisor
+- &forall; a, b &isin; Z, a|b iff the remainder of dividing b by a is zero.
+    - a|b should be read "a divides b"
+    - iff = if and only if
 
+- The greatest common divisor of a and b is the largest number that is a divisor of both a and b.
+    - gcd(a, b) = d
+    - if gcd(a, b) = 1, a and b are said to be coprime or relatively prime.
+    - gcd(a, 0) = a &forall; a &ne; 0.
+    - &forall; a, b &isin; Z,  &exist; s, t &isin; Z such that gcd(a, b) = a * s + b * t
 
-```yml
----
-category: ['encryption', 'guides']
----
+GCD(a, b) can easily be coded using the euclidian algorithm as show below.  Note: do not confuse the Euclidian algorithm with the Extended Euclidian algorithm; I will introduce that later in the RSA section.
+
+```python
+def gcd(a, b):
+    if (b == 0):
+        return a
+    return gcd(b, a % b)
 ```
+##### Prime Numbers
+- p is a prime number iff its set of divisors is {1, p}
+    - &forall; a &isin; Z, gcd(a, p) &isin; {1, p}
+    - &forall; a &ne; 0 &isin; Z<sub>p</sub>, gcd(a, p) = 1
 
-Then to render this category using link and pages. All we need to do is,
+- How many prime numbers are &le; x ?
+    - &pi;(x) = x / ln(x)
 
-1. Create a new file with [your_category_name].md inside categories folder.
+- Prime Factorization
+    - All integers can be expressed as a product of prime numbers
+        - E.g. 48 = 2<sup>4</sup>
+        - Factorization is the process of finding that product
+    - Prime factorization is computationally [Hard](https://en.wikipedia.org/wiki/Computational_hardness_assumption) for large numbers
+        - Currently, there aren't any known algorithms that can compute this in polynomial time.
 
-2. Copy categories/sample_category.md file and replace the content in [your_category_name].md in that. (Please don't copy the code below its just sample, since it renders the jekyll syntax dynamically)
+##### Multiplicative Group
+- To keep this post brief, I will provide minimal explanation of Group Mathematics.  For further understanding, read more about Group Mathematics.  If you have time, check out [Galois Groups](https://en.wikipedia.org/wiki/Galois_group) and [Galois Fields](https://en.wikipedia.org/wiki/Finite_field) as well.  Understanding Galois finite field mathematics isn't necessary for understanding Diffie-Hellman in particular, but it is important for understanding other types of cryptography, such as AES (Advanced Encryption Standard).  It is, however, crucial that you understand Group Mathematics, because it plays an important role in Diffie-Hellman.
 
-```jsx
----
-layout: page
-title: Guides
-permalink: /blog/categories/your_category_name/
----
+- Groups are sets with operations such that it can be said that the group is:
+    - Closed
+    - Associative
+    - Identity Element
+    - Inverse element
 
-<h5> Posts by Category : {{ page.title }} </h5>
+- For the purposes of this blog, I will focus on a multiplicative group G.  The multiplication operation provides includes the following group properties:
+    - Closed: &forall; a, b &isin; G, a * b &isin; G
+    - Associative: &forall; a, b, c &isin G, (a * b) * c = a * (b * c)
+    - Identity Element: &exist; e<sub>0</sub> &isin; G, &forall; a &isin; G, e<sub>0</sub> * a = a * e<sub>0</sub> = a
+    - Inverse Element: &forall; a &isin; G, &exist; b &isin; G, a * b = b * a = e<sub>0</sub>
 
-<div class="card">
-{% for post in site.categories.your_category_name %}
- <li class="category-posts"><span>{{ post.date | date_to_string }}</span> &nbsp; <a href="{{ post.url }}">{{ post.title }}</a></li>
-{% endfor %}
-</div>
-```
+- Group( Z<sub>n</sub><sup>*</sup> )
 
-Using the category, all the posts associated with the category will be listed on
+    - Z<sub>n</sub><sup>*</sup> = {a &isin; Z<sub>n</sub> | gcd(a,b) = 1}
+        - Removes 0 because gcd(a, 0) = a &forall; a &ne; 0.
+        - If n is prime, only 0 is removed
+        - This means Z<sub>n</sub><sup>*</sup> is the set of all integers &isin; Z<sub>n</sub> such that gcd(a, n) = 1.  That is, a and n are coprime.
+    
+    - Operation is multiplication (mod n)
+        - closed, associative, and commutative
+        - Identity element is (e<sub>0</sub> = 1)
+    
+    - Inverse Element
+        - &forall; a &isin; Z<sub>n</sub><sup>*</sup>, gcd(a, n) = 1
+        - Note: not &forall; a &isin; Z<sub>n</sub>, rather &forall; a &isin; Z<sub>n</sub><sup>*</sup>
+            - gcd(a, n) = a * s + n * t
+            - 1 = a * s + n * t
+            - 1 = a * s + n * t (mod n)
+            - 1 &equiv; a * s (mod n)
+        - a<sup>-1</sup> &equiv; s (mod n)
+
+- Subgroup
+    - G<sub>a</sub> = {a<sup>1</sup>, a<sup>2</sup>, ..., a<sup>m-1</sup>, a<sup>m</sup>} &sube; G
+    - G<sub>a</sub> is a subset of G and inherits all of the operations of G
+    - &forall; a &isin; G, |a| = |G<sub>a</sub>|, |G>sub>a</sub>| divides |G|
+    - In set theory | G | is the cardinality or number of elements in a set.  It is also referred to as "order of."
+        - Z<sub>10</sub><sup>*</sup> = {1, 3, 7, 9}
+        - |Z<sub>10</sub><sup>*</sup>| = 4
+        - In Group Math, |a| is the smallest m &isin; N, such that a<sup>m</sup> (mod n) = e<sub>0</sub> identity element.
+        - Select an element from the set Z<sub>10</sub><sup>*</sup> !  Let's choose 3.
+            - You can see below that when m is 4, 3<sup>4</sub> = 1.  `Remember (mod n)`
+            - {3<sup>1</sup>, 3<sup>2</sup>, 3<sup>3</sup>, 3<sup>4</sup>} = {3, 9, 7, 1}
+        - Let's also try 9
+            - {9<sup>1</sup>, 9<sup>2</sup>} = {9, 1}
+    
+    - Notice how |3| produces the set {3, 9, 7, 1}, which includes all of the numbers in Z<sub>10</sub><sup>*</sup>.  However, |9| only includes {9, 1}.  This is important because it means that 3 is a generator of Z<sub>10</sub><sup>*</sup>.
+        - an element a &isin; Z<sub>n</sub><sup>*</sup> is a generator of Z<sub>n</sub><sup>*</sup> iff |a| = |G|
+
+### Diffie-Hellman
+Okay!  Now we're ready to explore the Diffie-Hellman algorithm, followed by RSA.  Diffie-Hellman make heavy application of the math outlined above, so make sure you understand it before moving on.
+
+
+
 `http://localhost:4000/blog/categories/your_category_name`
