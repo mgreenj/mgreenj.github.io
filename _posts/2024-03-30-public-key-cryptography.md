@@ -22,7 +22,7 @@ Digital signatures provide integrity and non-repudiation.  Integrity refers to t
 
 ### Math Background  
 
-I will briefly introduce a few mathematical properties necessary for understanding Diffie-Hellman and RSA.  This is by no means comprehensive, and you are encouraged to do additional reading on your own.  You may be tempted to skip the math section; although it may not be the most exiting for some, it is necessary to understand Diffie-Hellman and RSA. `Dont' Skip` 
+I will briefly introduce a few mathematical properties necessary for understanding Diffie-Hellman and RSA.  This is by no means comprehensive, and you are encouraged to do additional reading on your own.  You may be tempted to skip the math section; although it may not be the most exiting for some, it is necessary to understand Diffie-Hellman and RSA. `Don't Skip` 
 
 #### Division and Remainder
 - &forall; a, b &isin; Z (set of intergers) , &exist; q, r &isin; Z such that a = b * q + r :
