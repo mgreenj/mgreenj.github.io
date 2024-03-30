@@ -25,14 +25,14 @@ Digital signatures provide integrity and non-repudiation.  Integrity refers to t
 I will briefly introduce a few mathematical properties necessary for understanding Diffie-Hellman and RSA.  This is by no means comprehensive, and you are encouraged to do additional reading on your own.
 
 #### Division and Remainder
-- &forall; a,b &isin; Z (set of integers), &exist; q, r &isin; Z such that a = b * q + r :
+- &forall; a,b &isin; &Zopf; , &exist; q, r &isin; Z such that a = b * q + r :
 
     - a is the dividend
     - b is the divisor
     - q is the quotient
     - r is the remainder
 
-- $\lfloor \frac{a}{b} \rfloor$ = q
+- &lfloor; a/b &rfloor; = q
 - a &equiv; r (mod b)
 
 
