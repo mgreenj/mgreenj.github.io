@@ -37,8 +37,8 @@ I will briefly introduce a few mathematical properties necessary for understandi
 
 
 ##### Greatest Common Divisor
-- &forall; a, b &isin; Z, a | b iff the remainder of dividing b by a is zero.
-    - a | b should be read "`a` divides `b`"
+- &forall; a, b &isin; Z, a \| b iff the remainder of dividing b by a is zero.
+    - a \| b should be read "`a` divides `b`"
     - iff = if and only if
 
 - The greatest common divisor of `a` and `b` is the largest number that is a divisor of both `a` and `b`.
