@@ -47,7 +47,7 @@ I will briefly introduce a few mathematical properties necessary for understandi
     - gcd(a, 0) = a &forall; a &ne; 0.
     - &forall; a, b &isin; Z,  &exist; s, t &isin; Z such that gcd(a, b) = a * s + b * t
 
-GCD(a, b) can easily be coded using the euclidian algorithm as show below.  Note: do not confuse the Euclidian algorithm with the Extended Euclidian algorithm; I will introduce that later in the RSA section.
+GCD(a, b) can easily be coded using the euclidian algorithm as show below.  `Note`: do not confuse the Euclidian algorithm with the Extended Euclidian algorithm; I will introduce that later in the RSA section.
 
 ```python
 def gcd(a, b):
@@ -98,7 +98,7 @@ def gcd(a, b):
     
     - Inverse Element
         - &forall; a &isin; Z<sub>n</sub><sup>*</sup>, gcd(a, n) = 1
-        - Note: not &forall; a &isin; Z<sub>n</sub>, rather &forall; a &isin; Z<sub>n</sub><sup>*</sup>
+        - `Note`: not &forall; a &isin; Z<sub>n</sub>, rather &forall; a &isin; Z<sub>n</sub><sup>*</sup>
             - gcd(a, n) = a * s + n * t
             - 1 = a * s + n * t
             - 1 = a * s + n * t (mod n)
