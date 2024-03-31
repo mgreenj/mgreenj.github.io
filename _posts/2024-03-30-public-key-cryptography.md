@@ -87,7 +87,7 @@ def gcd(a, b):
 
 - Group( Z<sub>n</sub><sup>*</sup> )
 
-    - Z<sub>n</sub><sup>*</sup> = {a &isin; Z<sub>n</sub> | gcd(a,b) = 1}
+    - Z<sub>n</sub><sup>*</sup> = {a &isin; Z<sub>n</sub> \| gcd(a,b) = 1}
         - Removes 0 because gcd(a, 0) = a &forall; a &ne; 0.
         - If n is prime, only 0 is removed
         - This means Z<sub>n</sub><sup>*</sup> is the set of all integers &isin; Z<sub>n</sub> such that gcd(a, n) = 1.  That is, a and n are coprime.
