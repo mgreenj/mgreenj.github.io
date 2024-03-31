@@ -164,12 +164,12 @@ Public-key cryptography is significantly slower than symmetric-key cryptography,
 - Step 6: Both User K and U have a shared secret and turn it into a symmetric key
     - An example would be SHA256(shared_key) and using some agreed upon length `l`.
 
-Diffie-Hellman depends on the difficulty of the Discrete Logaraithm Problem (DLP), which is
+- Diffie-Hellman depends on the difficulty of the Discrete Logaraithm Problem (DLP), which is
     - Given A = g<sup>a</sup> (mod p), it is computationally hard to calculate `a` knowing only `A`, `g`, and `p`.
 
-Additoinal Reading:
+##### Additoinal Reading
 
-You may want to do some additional reading; here are a few topics to consider
+- You may want to do some additional reading; here are a few topics to consider
     - Miller-Rabin Primality Test
     - Eliptic Curves & Eliptic Curve Diffie-Hellman
     - Modular Exponentiation `Very Important`
