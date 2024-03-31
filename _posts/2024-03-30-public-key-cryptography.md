@@ -114,7 +114,7 @@ def gcd(a, b):
         - \|Z<sub>10</sub><sup>*</sup>\| = 4
         - In Group Math, \|a\| is the smallest m &isin; N, such that a<sup>m</sup> (mod n) = e<sub>0</sub> identity element.
         - Select an element from the set Z<sub>10</sub><sup>*</sup> !  Let's choose 3.
-            - You can see below that when m is 4, 3<sup>4</sub> = 1.  `Remember (mod n)`
+            - You can see below that when m is 4, 3<sup>4</sup> = 1.  `Remember (mod n)`
             - {3<sup>1</sup>, 3<sup>2</sup>, 3<sup>3</sup>, 3<sup>4</sup>} = {3, 9, 7, 1}
         - Let's also try 9
             - {9<sup>1</sup>, 9<sup>2</sup>} = {9, 1}
