@@ -4,7 +4,7 @@ layout: page
 permalink: /current-trends/
 ---
 
-## Trending topics in Cybersecurity
+# Trending topics in Cybersecurity
 
 
 ## Want to stay up to date on current security threats ?
