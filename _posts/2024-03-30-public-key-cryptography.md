@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Public-Key Cryptography: Diffie-Hellman & RSA"
-summary: "Learn the basics of public-key cryptography, Diffie-Hellman, and RSA"
+title:  "Public-Key Cryptography: Diffie-Hellman"
+summary: "Learn the basics of public-key cryptography and Diffie-Hellman"
 author: 0x0M03II
 date: '2024-03-30 15:53:00 +0530'
 category: ['encryption', 'math', 'security']
@@ -22,7 +22,7 @@ Digital signatures provide integrity and non-repudiation.  Integrity refers to t
 
 ### Math Background  
 
-I will briefly introduce a few mathematical properties necessary for understanding Diffie-Hellman and RSA.  This is by no means comprehensive, and you are encouraged to do additional reading on your own.  You may be tempted to skip the math section; although it may not be the most exiting for some, it is necessary to understand Diffie-Hellman and RSA. `Don't Skip` 
+I will briefly introduce a few mathematical properties necessary for understanding Diffie-Hellman.  This is by no means comprehensive, and you are encouraged to do additional reading on your own.  You may be tempted to skip the math section; although it may not be the most exiting for some, it is necessary to understand Diffie-Hellman. `Don't Skip` 
 
 #### Division and Remainder
 - &forall; a, b &isin; Z (set of intergers) , &exist; q, r &isin; Z such that a = b * q + r :
@@ -47,7 +47,7 @@ I will briefly introduce a few mathematical properties necessary for understandi
     - gcd(a, 0) = a &forall; a &ne; 0.
     - &forall; a, b &isin; Z,  &exist; s, t &isin; Z such that gcd(a, b) = a * s + b * t
 
-GCD(a, b) can easily be coded using the euclidian algorithm as show below.  `Note`: do not confuse the Euclidian algorithm with the Extended Euclidian algorithm; I will introduce that later in the RSA section.
+GCD(a, b) can easily be coded using the euclidian algorithm as show below.  `Note`: do not confuse the Euclidian algorithm with the Extended Euclidian algorithm; I will introduce that in my next post that will cover RSA.
 
 ```python
 def gcd(a, b):
@@ -123,7 +123,7 @@ def gcd(a, b):
         - an element a &isin; Z<sub>n</sub><sup>*</sup> is a generator of Z<sub>n</sub><sup>*</sup> iff \|a\| = \|G\|
 
 ### Diffie-Hellman
-Okay!  Now we're ready to explore the Diffie-Hellman algorithm, followed by RSA.  Diffie-Hellman make heavy application of the math outlined above, so make sure you understand it before moving on.
+Okay!  Now we're ready to explore the Diffie-Hellman algorithm.  Diffie-Hellman make heavy application of the math outlined above, so make sure you understand it before moving on.
 
 Public-key cryptography is significantly slower than symmetric-key cryptography, and is typically used to bootstrap symmetric-key cryptography.  Diffie-Hellman facilitates key agreement or key exchange.
 
@@ -169,8 +169,13 @@ Public-key cryptography is significantly slower than symmetric-key cryptography,
 
 ##### Additoinal Reading
 
-- You may want to do some additional reading; here are a few topics to consider
+- You may want to do some additional reading, here are a few topics to consider:
     - Miller-Rabin Primality Test
     - Eliptic Curves & Eliptic Curve Diffie-Hellman
     - Modular Exponentiation `Very Important`
         - Algorithm using repeated squared simplifies programming modular exponentiation. 
+
+
+## Next Post: The RSA Algorithm
+
+In my next post, I will introduce the RSA algorithm, including the foundation mathematical concepts.
