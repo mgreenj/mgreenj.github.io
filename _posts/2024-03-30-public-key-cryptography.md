@@ -18,7 +18,7 @@ Public-Key cryptography works by using pairs of mathematically related keys gene
 
 Encryption provides confidentiality and works by using a recipients public key to encrypt a message.  Once the message is received, the recipient will use his or her own private key to decrypt the message.
 
-Digital signatures provide integrity and non-repudiation.  Integrity refers to ther assurance that the data is accurate and has not been changed.  Non-repudiation is the inability for someone to deny the origin or source of data.  An example use case would be for a service such as DocuSign, where authenticity of a signature is vital, and, once a contract is signed, it should not be possible for anyone to deny the authenticity of the signature.  In order to provide a digital signature, the sender of a message will encrypt the hash of the message using their private key.  The receiver of a message will use the senders public key to decrypt the hash, and compare the message hash computed by the sender with the hash computed locally.
+Digital signatures provide integrity and non-repudiation.  Integrity refers to the assurance that the data is accurate and has not been changed.  Non-repudiation is the inability for someone to deny the origin or source of data.  An example use case would be for a service such as DocuSign, where authenticity of a signature is vital, and, once a contract is signed, it should not be possible for anyone to deny the authenticity of the signature.  In order to provide a digital signature, the sender of a message will encrypt the hash of the message using their private key.  The receiver of a message will use the senders public key to decrypt the hash, and compare the message hash computed by the sender with the hash computed locally.
 
 ### Math Background  
 
@@ -73,7 +73,7 @@ def gcd(a, b):
 ##### Multiplicative Group
 - To keep this post brief, I will provide minimal explanation of Group Mathematics.  For further understanding, read more about [Group Mathematics](https://en.wikipedia.org/wiki/Group_(mathematics)).  If you have time, check out [Galois Groups](https://en.wikipedia.org/wiki/Galois_group) and [Galois Fields](https://en.wikipedia.org/wiki/Finite_field) as well.  Understanding Galois finite field mathematics isn't necessary for understanding Diffie-Hellman in particular, but it is important for understanding other types of cryptography, such as AES (Advanced Encryption Standard).  It is, however, crucial that you understand Group Mathematics, because it plays an important role in Diffie-Hellman.
 
-- Groups are sets with operations such that it can be said that the group is:
+- Groups are sets with operations that possess the following properties:
     - Closed
     - Associative
     - Identity Element
