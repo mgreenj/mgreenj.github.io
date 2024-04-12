@@ -102,10 +102,28 @@ author_education_details:
 
 # Projects
 author_project_details:
-              - project_thumbnail: crystal_gpu_main.png
-                project_title: CrystalGPU
-                project_description: A GUI for analyzing binaries on GPUs
-                project_url: https://github.com/0x0M03II/Crystal-GPU/
+              - project_thumbnail:
+                project_title: Speculative Parallel Execution in Blockchain
+                project_description: Investigating ways to reduce network congestion, latency, and transaction fees in blockchain using speculative parallel algorithms
+                project_url: https://github.com/0x0M03II/CurrentResearch
+                visibility: true
+
+              - project_thumbnail: 
+                project_title: Graph Theory - Community Detection and Digital Organized Crime
+                project_description: Exploring modifications to current community detection algorithms to disrupt digital organized crime networks
+                project_url: https://github.com/0x0M03II/CurrentResearch
+                visibility: true
+              
+              - project_thumbnail:
+                project_title: Zero-Knowledge Proofs, Blockchain, and AML (Anti-Money Laundering)
+                project_description: Exploring methods to enhance AML practices within clockchain and cryptocurrency systems.
+                project_url: https://github.com/0x0M03II/CurrentResearch
+                visibility: true
+              
+              - project_thumbnail:
+                project_title: Exploring the Rust and OCaml Compiler
+                project_description: Exploring and deciphering the Rust and OCaml compilers
+                project_url: https://github.com/0x0M03II/CurrentResearch
                 visibility: true
 
 # social links
