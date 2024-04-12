@@ -116,7 +116,7 @@ author_project_details:
               
               - project_thumbnail: zkp.png
                 project_title: Zero-Knowledge Proofs, Blockchain, and AML (Anti-Money Laundering)
-                project_description: Exploring methods to enhance AML practices within clockchain and cryptocurrency systems.
+                project_description: Exploring methods to enhance AML practices within blockchain and cryptocurrency systems.
                 project_url: https://github.com/0x0M03II/CurrentResearch
                 visibility: true
               
