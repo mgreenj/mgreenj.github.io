@@ -14,8 +14,6 @@ urls:
       url: /about
     - text: Blog
       url: /blog
-    - text: Connect
-      url : /connect
     - text: Contact
       url : /contact
 
