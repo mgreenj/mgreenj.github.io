@@ -64,7 +64,7 @@ I will include additional notes that explore linkers and loaders more in depth.
 On Linux, run  `ld --verbose` to view the default linker script used by your system.  I will give a brief introduction to the linker script, covering only the main parts.  If you're interested in learning more, checkout some of the resources listed above.
 
 ### GNU Linker Script
-```llvm
+```ld
 OUTPUT_FORMAT("elf64-x86-64", "elf64-x86-64",
               "elf64-x86-64")
 OUTPUT_ARCH(i386:x86-64)
@@ -323,7 +323,7 @@ SECTIONS
 ## Code Examples
 
 ### Memory Declarative
-```llvm
+```ld
 MEMORY
 {
     ROM (rx) : ORIGIN = 0, LENGTH = 256k
