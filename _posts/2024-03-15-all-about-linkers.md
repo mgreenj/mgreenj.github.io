@@ -47,11 +47,9 @@ Most developers include GNU [binutils](https://www.gnu.org/software/binutils/) i
 The linker is responsible for combining all of these object files into a single object file or binary. It is also responsible for reorganizing memory so that the combined pieces fit together; this is done by combining similar sections. Finally, the linker must modify the addresses to allow the program to run under the new memory organization.
 
 ### Object Files
-Here is an example from a recent program that I wrote.  After running make, the compiler produces three object files (main.o, diffiehellman.o, rsa.o, and utility.o) and combines them into a single binary named crypto_pk.
+In my Gitbook, I included an example from a cryptographic program that I wrote, implementing Diffie-Hellman and RSA.  Here, I'll include a simple picture that illustrates the point.
 
-![Make the program](/assets/img/posts/make_program.png)
-
-![Make program files](/assets/img/posts/files_program.png)
+![Make the program](/assets/img/posts/object_files.png)
 
 
 ## Types of Linking
