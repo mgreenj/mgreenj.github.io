@@ -311,11 +311,25 @@ SECTIONS
 ```
 
 ### GNU Linker Script Explanation
-* OUTPUT_FORMAT(): This declarative allows you to provide an output format for your executable.  For a listing of acceptable formats, run `objdump -i`.
-* ENTRY(): ENRTRY allows you to include the symbol defined in your program in the .text section that represents the first byte of executable code; that is, the entrypoint.  Checkout the disassembled example below, which shows the start entrypoint.  Note: In the disassembled code, the program (that only prints)  was written in C and then compiled.  The start section includes a lot of extra work to prepare the program, such as initializing registers, getting command-line arguments, calling main(), and handling exit().
-* SECTIONS(): This allows you to define a structured format in the output (object) file by segmenting the data in memory.  The linker script allows the developer to control the type of data that is in each section.  To learn about ELF binaries and the included sections, visit the [Linux manual page](https://man7.org/linux/man-pages/man5/elf.5.html).
+* `OUTPUT_FORMAT()`: This declarative allows you to provide an output format for your executable.  For a listing of acceptable formats, run `objdump -i`.
+* `ENTRY()`: ENRTRY allows you to include the symbol defined in your program in the .text section that represents the first byte of executable code; that is, the entrypoint.  Checkout the disassembled example below, which shows the start entrypoint.  Note: In the disassembled code, the program (that only prints)  was written in C and then compiled.  The start section includes a lot of extra work to prepare the program, such as initializing registers, getting command-line arguments, calling main(), and handling exit().
+* `SECTIONS()`: This allows you to define a structured format in the output (object) file by segmenting the data in memory.  The linker script allows the developer to control the type of data that is in each section.  To learn about ELF binaries and the included sections, visit the [Linux manual page](https://man7.org/linux/man-pages/man5/elf.5.html).
+    * Declaring a section follows the format .section and sections are interpreted in the order they are listed.  For example, .text is the section in ELF binaries that includes the executable code of your program.
+    * You can also map subsection names using a wildcard, to a specific object file or any object file.  For example, *(.text.unlikely .text.*_unlikely .text.unlikely.*) will match any section that matches the pattern.  Notice the wildcard before the parenthesis; alternatively, we could specify the object file like startup.o(.text.unlikely ...) however the wildcard is more common because file names can change.  Why are there so many alias names?  It allows the developer to organize the code by controlling where it is placed in memory.  In the example above, sections matching the that text pattern is unlikely to be executed.  Grouping that code together can, for example, improve cache locality by letter hot code (code that is frequently executed) be grouped together.
+    * `PROVIDE()`: provides a symbol that can be referenced code.
+* MEMORY(): The memory declaration is not included in the example above; however, it is very important for kernel developers.  The example below, shows how a memory region is declared with access attributes.  Sections defined in SECTIONS can map to a specific region by adding the following after the closing bracket: >RAM AT>ROM.  The first ( >RAM ) means store the preceding section in RAM and ( AT>ROM ) sets the LMA (load memory address) to ROM, or read-only memory.
+
 
 ## Code Examples
+
+### Memory Declarative
+```ld
+MEMORY
+{
+    ROM (rx) : ORIGIN = 0, LENGTH = 256k
+    RAM (wx) : org = 0x00100000, len = 1M
+}
+```
 
 ### Disassembled Example (Objdump output)
 ```nasm
