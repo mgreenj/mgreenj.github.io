@@ -18,8 +18,6 @@ urls:
       url:  /contact
     - text: Knowledge Base
       url:  https://docs.thecodeguardian.dev
-    - Legal Disclaimer:
-      url: /disclaimer
 
 
 # Edit Author details (For multi authors check _data/authors.yml)
