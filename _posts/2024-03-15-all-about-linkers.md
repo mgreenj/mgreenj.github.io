@@ -2,7 +2,7 @@
 layout: post
 title:  "Reverse Engineering: An Introduction to Linkers"
 summary: "Learn about Linkers and how to write a Linker script."
-author: 0x0M03II
+author: maurice
 date: '2024-03-15 10:35:23 +0530'
 category: ['kernel', 'reverse-engineering', 'linux', 'operating-systems']
 tags: encryption

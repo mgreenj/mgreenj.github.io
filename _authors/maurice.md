@@ -1,6 +1,6 @@
 ---
 name: Maurice Green
-username: 0x0M03II
+username: maurice
 bio: "DevOps Engineer & Security Researcher"
 site: http://thecodeguardian.dev
 avatar: 0x0m03ii.png
