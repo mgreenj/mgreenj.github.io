@@ -3,7 +3,7 @@ name: Maurice Green
 username: maurice
 bio: "DevOps Engineer & Security Researcher"
 site: http://thecodeguardian.dev
-avatar: 0x0m03ii.png
+avatar: maurice.png
 email: maurice.green@thecodeguardian.dev
 social:
   - title: "github"
