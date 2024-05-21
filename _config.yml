@@ -34,7 +34,7 @@ author_bio: |
 author_email: "maurice.green@thecodeguardian.dev"
 author_location: United States of America
 author_website_url: "https://thecodeguardian.dev"
-typewrite-text: This blog is for those who love all things CS to learn and collaborate.
+typewrite-text: A cybersecurity and systems blog for those that love cybersecurity and systems.
 hero_cover_img: dark_cpp.jpg # replace this for changing homepage cover (eg. try cover.jpeg). Image should be in /assets/img
 
 # Experiences
