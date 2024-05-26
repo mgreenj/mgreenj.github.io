@@ -35,7 +35,7 @@ Full documentation on AACS32 can be found [here](https://github.com/ARM-software
 
 According to the AACS32, registers r0 & r1 are scratch registers for results, while r2 & r3 are scratch registers for other use.  Crucially, AACS32 defines different behavior for datatypes that exceed 32-bits.
 
-The first four registers (r0, r1, r2, and r3) are used to pass argument values into a subroutine and return a result.  Something else worth mentioning, is that AAPCS32 seems to be linked to the THUMB architecture.
+The first four registers (r0, r1, r2, and r3) are used to pass argument values into a subroutine and return a result.  Something else worth mentioning, is that AAPCS32 seems to be linked to the THUMB ISA.
 
 > The AAPCS requires that all sub-routine call and return sequences support inter-working between Arm and Thumb states....
 
