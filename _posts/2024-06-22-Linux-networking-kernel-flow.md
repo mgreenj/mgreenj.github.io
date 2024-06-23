@@ -133,7 +133,7 @@ int tcp_sendmsg(struct sock *sk, struct msghdr *msg, size_t size)
 The implementation of `tcp_sendmsg_locked` includes a call to [__tcp_push_pending_frames](https://github.com/torvalds/linux/blob/master/net/ipv4/tcp.c#L1297), and this is where things get interesting.  Pushing page frames involves invoking tcp_write_xmit, which traverses the write queue that belongs to the socket and clones the packet.
 
 > [!Note]
-> You'll notice several function calls that are wrapped with likely() or [unlikley()](https://github.com/torvalds/linux/blob/master/net/ipv4/tcp_output.c#L3011).  This is a classification used with ELF binaries to improve locality.  See my note about this in the post on [Linkers](https://www.thecodeguardian.dev/blog/learn-about-linkers/#/) in the section `GNU Linker Script Explanation`.
+> You'll notice several function calls that are wrapped with likely() or [unlikley()](https://github.com/torvalds/linux/blob/master/net/ipv4/tcp_output.> c#L3011).  This is a classification used with ELF binaries to improve locality.  See my note about this in the post on [Linkers](https://www.thecodeguardian.dev/blog/learn-about-linkers/#/) in the section `GNU Linker Script Explanation`.
 
 
 ### tcp_write_xmit() -> tcp_transmit_skb()
