@@ -100,6 +100,12 @@ author_education_details:
 
 # Projects
 author_project_details:
+              - project_thumbnail: utk.png
+                project_title: HPC/Networking Research Project with UTK Faculty
+                project_description: I will provide a description on a future date
+                project_url: https://github.com/0x0M03II/CurrentResearch
+                visibility: true
+
               - project_thumbnail: blockchain_logo.png
                 project_title: Speculative Parallel Execution in Blockchain
                 project_description: Investigating ways to reduce network congestion, latency, and transaction fees in blockchain using speculative parallel algorithms
