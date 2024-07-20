@@ -2,7 +2,7 @@
 layout: post
 title:  "Packet flow in Linux Kernel"
 summary: "How the Linux kernel processes packets."
-author: maurice
+author: 0x0m03II
 date: '2024-06-22 21:14:00 +0530'
 category: ['linux', 'operating systems', 'kernel', 'hpc', 'networking', 'systems']
 tags: linux
