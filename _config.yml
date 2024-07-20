@@ -36,65 +36,65 @@ typewrite-text: A cybersecurity and systems blog for those that love cybersecuri
 hero_cover_img: dark_cpp.jpg # replace this for changing homepage cover (eg. try cover.jpeg). Image should be in /assets/img
 
 # Experiences
-# author_work_experiences:
-#             - company_name: Industry Dive
-#               company_logo: id.png
-#               company_url: https://www.industrydive.com/
-#               designation: DevOps Engineer
-#               description: Kubernetes, GCP, Security
-#               visibility: true
-#             - company_name: Differential Consulting, LLC
-#               company_logo: differential.png
-#               company_url: https://differentialops.com/
-#               designation: Founder & Consultant
-#               description: GCP, Azure, DevOps, Security, Tool Development
-#               visibility: true
-#             - company_name: Edward Jones
-#               company_logo: edwardjones.png
-#               company_url: https://edwardjones.com/
-#               designation: Site Reliability Engineer
-#               description: AKS, Dynatrace, eBPF C Tool Development
-#               visibility: true
-#             - company_name: Peak6 Capital Management
-#               company_logo: p6.png
-#               company_url: https://peak6.com/
-#               designation: DevOps Engineer
-#               description: Kubernetes, GCP, Security
-#               visibility: true
-#             - company_name: Apex FinTech Solutions
-#               company_logo: apex.png
-#               company_url: https://apexfintechsolutions.com/
-#               designation: Systems Engineer
-#               description: Kubernetes, GCP, Web API Development
-#               visibility: true
-#             - company_name: Systemware, Inc.
-#               company_logo: systemware.png
-#               company_url: https://systemware.com/
-#               designation: DevOps Engineer
-#               description: Kubernetes, GCP, Security
-#               visibility: true
-#             - company_name: Secureworks (A Dell Company)
-#               company_logo: secureworks.png
-#               company_url: https://secureworks.com/
-#               designation: Sr. Security Analyst
-#               description: Intrusion Analysis, Blue Team
-#               visibility: true
+author_work_experiences:
+            - company_name: Industry Dive
+              company_logo: id.png
+              company_url: https://www.industrydive.com/
+              designation: DevOps Engineer
+              description: Kubernetes, GCP, Security
+              visibility: true
+            - company_name: Differential Consulting, LLC
+              company_logo: differential.png
+              company_url: https://differentialops.com/
+              designation: Founder & Consultant
+              description: GCP, Azure, DevOps, Security, Tool Development
+              visibility: true
+            - company_name: Edward Jones
+              company_logo: edwardjones.png
+              company_url: https://edwardjones.com/
+              designation: Site Reliability Engineer
+              description: AKS, Dynatrace, eBPF C Tool Development
+              visibility: true
+            - company_name: Peak6 Capital Management
+              company_logo: p6.png
+              company_url: https://peak6.com/
+              designation: DevOps Engineer
+              description: Kubernetes, GCP, Security
+              visibility: true
+            - company_name: Apex FinTech Solutions
+              company_logo: apex.png
+              company_url: https://apexfintechsolutions.com/
+              designation: Systems Engineer
+              description: Kubernetes, GCP, Web API Development
+              visibility: true
+            - company_name: Systemware, Inc.
+              company_logo: systemware.png
+              company_url: https://systemware.com/
+              designation: DevOps Engineer
+              description: Kubernetes, GCP, Security
+              visibility: true
+            - company_name: Secureworks (A Dell Company)
+              company_logo: secureworks.png
+              company_url: https://secureworks.com/
+              designation: Sr. Security Analyst
+              description: Intrusion Analysis, Blue Team
+              visibility: true
 
 
-# # Education
-# author_education_details:
-#               - college_logo: utk.png
-#                 college_name: University of Tennessee (Knoxville)
-#                 college_url: https://utk.edu
-#                 college_degree: Computer Science
-#                 description: Master of Science
-#                 visibility: true
-#               - college_logo: eiu.png
-#                 college_name: Eastern Illinois University
-#                 college_url: https://eiu.edu
-#                 college_degree: Management Information Systems
-#                 description: Bachelor of Science
-#                 visibility: true
+# Education
+author_education_details:
+              - college_logo: utk.png
+                college_name: University of Tennessee (Knoxville)
+                college_url: https://utk.edu
+                college_degree: Computer Science
+                description: Master of Science
+                visibility: true
+              - college_logo: eiu.png
+                college_name: Eastern Illinois University
+                college_url: https://eiu.edu
+                college_degree: Management Information Systems
+                description: Bachelor of Science
+                visibility: true
 
 # Projects
 author_project_details:
@@ -161,8 +161,8 @@ highlighter: rouge
 permalink: pretty
 
 # Choose what to show ( can be true or false)
-show_author_work_experiences: true
-show_author_education_details: true
+show_author_work_experiences: false
+show_author_education_details: false
 show_author_project_details: true
 
 # pagination of posts
