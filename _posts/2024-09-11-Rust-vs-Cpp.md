@@ -2,7 +2,7 @@
 layout: post
 title:  "The Rust Programming Language: Will Rust replace C/C++?"
 summary: "Learn why Rust may or may not replace older programming languages, such as C and C++."
-author: 0x0m03II
+author: Maurice
 date: '2024-09-11 12:29:00 +0530'
 category: ['rust', 'programming', 'security', 'opinion']
 tags: programming

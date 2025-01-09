@@ -2,7 +2,7 @@
 layout: post
 title:  "Asymptotic Analysis: Arithmetic Sequence"
 summary: "Asymptotic analysis of an algorithm using Theta notation and arithmetic sequnce sum of terms"
-author: 0x0m03II
+author: Maurice
 date: '2024-05-25 15:45:00 +0530'
 category: ['algorithm', 'math', 'programming']
 tags: algorithm

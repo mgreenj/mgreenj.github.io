@@ -2,7 +2,7 @@
 layout: post
 title:  "ARM: Going down a rabbit trail in ARM"
 summary: "Learn about ARM AAPCS and THUMB ISA."
-author: 0x0m03II
+author: Maurice
 date: '2024-05-25 23:45:00 +0530'
 category: ['arm', 'architecture', 'cpu']
 tags: architecture

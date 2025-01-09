@@ -2,7 +2,7 @@
 layout: post
 title:  "Public-Key Cryptography: Diffie-Hellman"
 summary: "Learn the basics of public-key cryptography and Diffie-Hellman"
-author: 0x0m03II
+author: Maurice
 date: '2024-03-30 15:53:00 +0530'
 category: ['encryption', 'math', 'security']
 tags: encryption
