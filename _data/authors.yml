@@ -1,13 +1,13 @@
 # Add Authors here
-0x0m03II:
-   name: 0x0m03II
-   username: 0x0m03II
+Maurice:
+   name: Maurice
+   username: mgreen
    site: http://thecodeguardian.dev
-   avatar: knight_small.png
+   avatar: maurice.png
    bio: "DevOps Engineer & Security Researcher"
-   email: 0x0m03II@thecodeguardian.dev
+   email: maurice.green@thecodeguardian.dev
    social:
       - title: "github"
         url: "https://github.com/0x0M03II"
       - title: "twitter"
-        url: "https://www.twitter.com/0x0M03II"
+        url: "https://www.twitter.com/Maurice_GreenJr"
