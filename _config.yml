@@ -1,5 +1,5 @@
 title: The Code Guardian
-subtitle: A blog for 0x0M03II
+subtitle: A blog for Maurice
 description: >- # this means to ignore newlines until "baseurl:"
   This is a Security and Tech blog.
 
@@ -23,7 +23,7 @@ urls:
 # Edit Author details (For multi authors check _data/authors.yml)
 
 author_logo: knight_small.png
-author: 0x0M03II
+author: Maurice
 author_bio: |
   Hello! I am a security and CS enthusiast and most importantly a partaker of the grace of God and a follower of Jesus! 
   Check out my other Blogs:
@@ -101,37 +101,37 @@ author_project_details:
               - project_thumbnail: utk.png
                 project_title: HPC/Networking Research Project with UTK Faculty
                 project_description: I will provide a description on a future date
-                project_url: https://github.com/0x0M03II/CurrentResearch
+                project_url: https://github.com/mgreenj/CurrentResearch
                 visibility: true
 
               - project_thumbnail: blockchain_logo.png
                 project_title: Speculative Parallel Execution in Blockchain
                 project_description: Investigating ways to reduce network congestion, latency, and transaction fees in blockchain using speculative parallel algorithms
-                project_url: https://github.com/0x0M03II/CurrentResearch
+                project_url: https://github.com/mgreenj/CurrentResearch
                 visibility: true
 
               - project_thumbnail: graph-theory.png
                 project_title: Graph Theory - Community Detection and Digital Organized Crime
                 project_description: Exploring modifications to current community detection algorithms to disrupt digital organized crime networks
-                project_url: https://github.com/0x0M03II/CurrentResearch
+                project_url: https://github.com/mgreenj/CurrentResearch
                 visibility: true
               
               - project_thumbnail: zkp.png
                 project_title: Zero-Knowledge Proofs, Blockchain, and AML (Anti-Money Laundering)
                 project_description: Exploring methods to enhance AML practices within blockchain and cryptocurrency systems.
-                project_url: https://github.com/0x0M03II/CurrentResearch
+                project_url: https://github.com/mgreenj/CurrentResearch
                 visibility: true
               
               - project_thumbnail: rust.png
                 project_title: Exploring the Rust and OCaml Compiler
                 project_description: Exploring and deciphering the Rust and OCaml compilers
-                project_url: https://github.com/0x0M03II/CurrentResearch
+                project_url: https://github.com/mgreenj/CurrentResearch
                 visibility: true
 
 # social links
-twitter_username: 0x0M03II
-github_username:  0x0M03II
-linkedin_username:
+twitter_username: Maurice_GreenJr
+github_username:  mgreenj
+linkedin_username: mauricegreenjr
 discuss_systems: 0x0M03II
 
 
